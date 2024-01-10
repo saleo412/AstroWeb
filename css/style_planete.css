@@ -38,6 +38,11 @@ ion-icon {
   text-decoration: underline;
 }
 
+.lien:hover {
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
 .big-image {
   width: 889px;
   height: 500px;
@@ -272,11 +277,6 @@ main {
   width: 40%;
   height: 40vh;
   border-radius: 15px;
-}
-
-.contenu a:hover {
-  opacity: 0.8;
-  transition: 0.2s;
 }
 
 
