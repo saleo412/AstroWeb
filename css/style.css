@@ -9,7 +9,7 @@
 
 html {
   scrollbar-width: thin;
-  scrollbar-color: var(--black-700) var(--black-950);
+  scrollbar-color: #929292 #555555 ;
   scroll-behavior: smooth;
 }
 
