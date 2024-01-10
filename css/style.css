@@ -33,7 +33,15 @@ ion-icon {
 
 }
 
+.lien {
+  font-style: italic;
+  text-decoration: underline;
+}
 
+.lien:hover {
+  opacity: 0.8;
+  transition: 0.2s;
+}
 
 /*HOME*/
 main {
