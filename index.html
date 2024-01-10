@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="media/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest"> <!-- Pour le favicon -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Deux CSS : un pour la page en global et utilisé seulement pour cette page-->
+  <link rel="stylesheet" href="css/headfoot.css">
+  <!-- Et lui pour le header et le footer, utilisé sur toutes les pages -->
+  <meta name="description" content="Page d'accueil du site web, qui présente le système solaire de manière globale">
+  <!-- Balise meta description -->
+</head>
+
+<body>
+  <header>
+    <a href="index.html" class="menu-button" aria-label="Accueil">
+      <ion-icon name="planet-outline">Accueil</ion-icon>
+    </a>
+    <ion-icon name="menu-outline" id="burger"></ion-icon> <!-- Icone qui apparait pour l'affichage mobile du menu -->
+    <ul class="head-mid" id="nav">
+      <!-- Menu de navigation propre à toutes les pages -->
+      <li><a href="html/venus.html" id="venus">Venus</a></li>
+      <li><a href="html/terre.html">Terre</a></li>
+      <li><a href="html/mars.html">Mars</a></li>
+      <li><a href="html/jupiter.html" id="jupiter">Jupiter</a></li>
+      <li><a href="html/saturne.html">Saturne</a></li>
+      <li><a href="html/uranus.html">Uranus</a></li>
+    </ul>
+    <button id="togglebtn" name="sun" aria-label="ToggleMode">
+      <!-- Bouton du light/dark mode -->
+      <ion-icon name="sunny-outline" id="sun">Soleil</ion-icon>
+      <ion-icon name="moon-outline" id="moon">Lune</ion-icon>
+      <!-- Icones de Lune et de Soleil qui change en fonction du réglage -->
+    </button>
+  </header>
+  <main>
+    <section class="pos">
+      <div class="pos-t">
+        <h1>Le système Solaire</h1>
+      </div>
+      <div class="sys">
+        <div class="sun"></div>
+        <div class="planet planet-t">
+          <p>Terre</p>
+        </div>
+        <div class="planet planet-m">
+          <p>Mars</p>
+        </div>
+        <div class="planet planet-j">
+          <p>Jupiter</p>
+        </div>
+        <div class="planet planet-v">
+          <p>Vénus</p>
+        </div>
+        <div class="planet planet-s">
+          <p>Saturne</p>
+          <div class="saturn-ring"></div>
+        </div>
+        <div class="planet planet-u">
+          <p>Uranus</p>
+        </div>
+      </div> <!-- Toutes ces div servent à la création des planètes pour l'animation CSS -->
+
+    </section>
+    <!--     <img src="/SiteJulesEtLeo//media/fusee.png" alt="Fusée" class="fusee" id="fusee1" /> -->
+    <section class="position">
+      <div class="contenu">
+        <article class="card">
+          <div>
+            <h2>À la decouverte du système solaire</h2>
+            <h2>Qu'est-ce que c'est ?</h2>
+            <p>Le Système Solaire, une danse cosmique en perpétuel mouvement, offre un panorama fascinant de notre coin
+              de
+              l'univers. Au cœur de ce système, le Soleil règne en maître, dispensant lumière et chaleur à ses
+              compagnons
+              célestes. Cette vaste étendue d'espace est peuplée d'une variété d'objets célestes, créant un équilibre
+              harmonieux entre la force gravitationnelle et la diversité des astres qui l'habitent.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div>
+            <h2>Le Soleil, source de vie et chef d'orchestre</h2>
+            <p>Notre étoile, le Soleil, trône au centre de ce ballet cosmique. Une boule de plasma brûlant, il émet une
+              énergie incommensurable, influençant le mouvement des planètes, des lunes, et des autres objets qui
+              l'entourent.
+              Sa présence magnétique donne naissance à des phénomènes solaires captivants, comme les éruptions solaires
+              et
+              les
+              cycles d'activité. <i>Cliquez <a href="https://youtu.be/TOYGhaf8c24" class="lien">ici</a> pour plus
+                d'informations sur le Soleil.</i></p>
+          </div>
+        </article>
+        <article class="card">
+          <div>
+            <h2>Les planètes telluriques et gazeuses</h2>
+            <p>Autour du Soleil gravitent une série de planètes, chacune avec ses caractéristiques uniques. Les planètes
+              telluriques, comme Mercure (trop petite pour être représentée sur le schéma), Vénus, la Terre, et Mars,
+              affichent des surfaces solides et rocheuses.</p>
+            <p> À une distance plus éloignée, les géantes gazeuses, telles que
+              Jupiter et Saturne, se démarquent par leurs atmosphères épaisses et leurs gigantesques systèmes d'anneaux.
+              Les planètes telluriques ressemblent à la Terre : elles sont de petite taille et formées de roches, et
+              contiennent surtout des matières solides comme le fer. Les planètes gazeuses peuvent avoir un noyau
+              rocheux, mais sont surtout composées de grandes quantités de gaz comme l'hydrogène, l'hélium et le
+              méthane.
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <div>
+            <h2>Les confins glacés et mystérieux</h2>
+            <p>Plus éloignées encore, Uranus et Neptune, les géantes glacées, intriguent par leur composition dominée
+              par
+              des
+              éléments glacés et gazeux. Leurs orbites lointaines ajoutent une dimension mystérieuse à la périphérie du
+              système solaire.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div>
+            <h2>Les objets errants et mystiques</h2>
+            <p>Le Système Solaire abrite également une multitude d'objets plus petits, tels que les astéroïdes et les
+              comètes.
+              Ces vagabonds cosmiques, dont les trajectoires peuvent être imprévisibles, ajoutent une dimension
+              dynamique
+              à
+              l'espace interplanétaire.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div>
+            <h2>Plus de détails</h2>
+            <p>Voilà une vidéo très intéressante sur le sujet :</p>
+            <video controls width="400" loading="lazy">
+              <source src="media/sysSol.mp4" type="video/webm" /> <!-- Pour la vidéo -->
+              <track default src="media/subtitles.vtt" label="Français" /> <!-- Pour les sous-titres -->
+            </video>
+          </div>
+        </article>
+        <article class="card">
+          <div>
+            <h2>Pourquoi ce site ?</h2>
+            <p>Le Système Solaire, actuellement, regorge de mystères, et en particulier sur les planètes qui le
+              constituent.
+              Que diriez-vous de les découvrir plus en détail ? Cela tombe bien, car c'est l'objectif du site ! Nous
+              vous
+              invitons à partir en voyage spatial avec nous, alors accrochez-vous bien et venez-découvrir les mystères
+              de
+              notre planète et ses voisines !</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <h2>À Propos</h2>
+      <p>Ce site a été créé par Léo SALENSON, Jules BALDONI.</p>
+      <p><strong>Aucune</strong> donnée n'est recueillie par ce site.</p>
+      <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/"> <img class="image_cc"
+          src="https://lesexpertsduquotidien.org/local/cache-vignettes/L403xH141/by-nc-sa.eu_-50980.png?1537337535"
+          alt="Creative Commons Attribution-NonCommercial-ShareAlike" /> </a>
+    </div>
+    <div>
+      <h2>Votre avis compte !</h2>
+      <p>Nous souhaitons recueillir vos avis. Répondez à nos questions !</p>
+      <a href="html/form.html" class="lien">Accédez à notre formulaire en cliquant juste ici.</a>
+      <!-- Lien vers le formulaire -->
+    </div>
+    <a href="#top" class="remonter" aria-label="Remonter">
+      <ion-icon name="arrow-up-circle-outline">Haut de la page</ion-icon>
+      <!-- Bouton pour remonter en haut de la page -->
+    </a>
+  </footer>
+  <script src="js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <!-- Ces deux lignent servent à utiliser les ion-icons -->
+</body>
+
+</html>

@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: Verdana, Arial, Tahoma, Serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+ion-icon {
+  font-size: 45px;
+}
+
+/*couleur choisi ici : https://uicolors.app/create*/
+:root {
+  --black-50: #f6f6f6;
+  --black-100: #e7e7e7;
+  --black-200: #d1d1d1;
+  --black-300: #b0b0b0;
+  --black-400: #888888;
+  --black-500: #6d6d6d;
+  --black-600: #5d5d5d;
+  --black-700: #4f4f4f;
+  --black-800: #454545;
+  --black-900: #1f1f1f;
+  --black-950: #0f0f0f;
+
+
+}
+
+.lien {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.big-image {
+  width: 889px;
+  height: 500px;
+}
+
+body {
+  transition: background-color 0.5s ease;
+  color: var(--black-50);
+}
+
+/*HOME*/
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+}
+
+.pos {
+  width: 80%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pos-t {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 6vw;
+}
+
+.sun {
+  padding: 10%;
+  background: linear-gradient(to right, #fbff00, #ff7300);
+  border-radius: 50%;
+  box-shadow: 0px 0px 105px 76px rgba(255, 213, 0, 0.22);
+}
+
+.planet {
+  border-radius: 50%;
+  position: absolute;
+  transform-origin: 50% 10%;
+  box-shadow: 0px 0px 38px 0px rgba(255, 255, 255, 0.22);
+}
+
+/* TERRE */
+.planet-t {
+  padding: 0.5%;
+  background: linear-gradient(to right, #1eff00, #00b7ff);
+  animation: orbit-t 12.00021s linear infinite;
+}
+
+/* MARS */
+.planet-m {
+  padding: 1.6%;
+  background: linear-gradient(to right, #ff3c00, #3f1d00);
+  animation: orbit-m 22.57017s linear infinite;
+}
+
+/* VENUS */
+.planet-v {
+  padding: 0.48%;
+  background: linear-gradient(to right, #ff0000, #ff7300);
+  animation: orbit-v 7.38237s linear infinite;
+}
+
+/* JUPITER */
+.planet-j {
+  padding: 5.5%;
+  background: linear-gradient(to right, #ffd67e, #642d00);
+  animation: orbit-j 142.35138s linear infinite;
+}
+
+/* SATURN */
+.planet-s {
+  padding: 4.7%;
+  background: linear-gradient(to right, #fdff6c, #d36e1b);
+  animation: orbit-s 353.36998s linear infinite;
+}
+
+.saturn-ring {
+  width: 120%;
+  height: 5%;
+  background-color: #6e673a;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* URANUS */
+.planet-u {
+  padding: 2%;
+  max-width: 50px;
+  max-height: 50px;
+  background: linear-gradient(to right, #6cb8ff, #371bd3);
+  animation: orbit-u 300s linear infinite;
+}
+
+.terre {
+  border-radius: 50%;
+  box-shadow: 0px 0px 38px 0px rgba(255, 255, 255, 0.22);
+  padding: 10%;
+  background: linear-gradient(#669d34, #00a1d8);
+}
+
+.lune {
+  border-radius: 50%;
+  position: absolute;
+  transform-origin: 80% 10%;
+  box-shadow: 0px 0px 38px 0px rgba(255, 255, 255, 0.22);
+  padding: 3%;
+  background: linear-gradient(to right, #858585, #474747);
+  animation: orbit-l 16.00021s linear infinite;
+}
+
+
+/*LUNE*/
+@keyframes orbit-l {
+  from {
+    transform: rotate(0deg) translateX(20vw) rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg) translateX(20vw) rotate(40deg);
+  }
+}
+
+/* Responsive adjustments based on viewport width */
+
+
+/*VENUS*/
+@keyframes orbit-v {
+  from {
+    transform: rotate(0deg) translateX(14vw) rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg) translateX(14vw) rotate(0deg);
+  }
+}
+
+/*TERRE*/
+@keyframes orbit-t {
+  from {
+    transform: rotate(0deg) translateX(13vw) rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg) translateX(13vw) rotate(0deg);
+  }
+}
+
+/*MARS*/
+@keyframes orbit-m {
+  from {
+    transform: rotate(0deg) translateX(20vw) rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg) translateX(20vw) rotate(0deg);
+  }
+}
+
+/*JUPITER*/
+@keyframes orbit-j {
+  from {
+    transform: rotate(0deg) translateX(25vw) rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg) translateX(25vw) rotate(0deg);
+  }
+}
+
+/*SATURNE*/
+@keyframes orbit-s {
+  from {
+    transform: rotate(0deg) translateX(37vw) rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg) translateX(37vw) rotate(0deg);
+  }
+}
+
+/*URANUS*/
+@keyframes orbit-u {
+  from {
+    transform: rotate(0deg) translateX(30vw) rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg) translateX(30vw) rotate(0deg);
+  }
+}
+
+
+.contenu {
+  border: white 1px solid;
+  z-index: 1;
+  width: 80%;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 38px 0px rgba(255, 255, 255, 0.1);
+  padding: 3%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.contenu.light {
+  box-shadow: 0px 0px 38px 0px rgba(0, 0, 0, 0.5);
+  border: black 1px solid;
+}
+
+.contenu h1 {
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+
+.contenu p {
+  margin: 15px 0 12px 0;
+
+}
+
+.contenu img {
+
+  width: 20%;
+  height: 20vh;
+  border-radius: 15px;
+}
+
+.contenu a:hover {
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
+
+/*FIN HOME*/
+
+/*LIGHT MODE*/
+body.light {
+  color: var(--black-950);
+  background-color: var(--black-50);
+}
+
+.lien.light {
+  color: var(--black-950);
+}
+
+header.light {
+  background-color: var(--black-200);
+}
+
+.head-mid li:hover.light {
+  color: #ff490d;
+}
+
+header.light a {
+  color: var(--black-950);
+}
+
+header.light svg {
+  color: var(--black-950);
+}
+
+header.light button {
+  color: var(--black-950);
+}
+
+main.light {
+  background-color: var(--black-50);
+}
+
+@media (max-width: 1250px) {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 1em;
+  }
+
+  p,
+  a {
+    font-size: 0.8em;
+  }
+}

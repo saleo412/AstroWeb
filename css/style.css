@@ -1,0 +1,447 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: Verdana, Arial, Tahoma, Serif;
+}
+
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--black-700) var(--black-950);
+  scroll-behavior: smooth;
+}
+
+ion-icon {
+  font-size: 45px;
+}
+
+/*couleur choisi ici : https://uicolors.app/create*/
+:root {
+  --black-50: #f6f6f6;
+  --black-100: #e7e7e7;
+  --black-200: #d1d1d1;
+  --black-300: #b0b0b0;
+  --black-400: #888888;
+  --black-500: #6d6d6d;
+  --black-600: #5d5d5d;
+  --black-700: #4f4f4f;
+  --black-800: #454545;
+  --black-900: #1f1f1f;
+  --black-950: #0f0f0f;
+
+}
+
+
+
+/*HOME*/
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+
+}
+
+.pos {
+  overflow: visible;
+  position: relative;
+  height: 95vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pos-t {
+  display: flex;
+  justify-content: flex-end;
+  height: 20vh;
+  flex-direction: column;
+}
+
+.sys {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sun {
+  padding: 8%;
+  background: linear-gradient(to right, #fbff00, #ff7300);
+  border-radius: 50%;
+  box-shadow: 0px 0px 105px 76px rgba(255, 213, 0, 0.22);
+}
+
+.planet {
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  transform-origin: 50% 10%;
+  box-shadow: 0px 0px 38px 0px rgba(255, 255, 255, 0.22);
+}
+
+.planet p {
+  display: none;
+  position: absolute;
+}
+
+.planet:hover p {
+  width: auto;
+
+  border-radius: 15px;
+  background-color: var(--black-800);
+  display: block;
+  bottom: 110%;
+  left: 40%;
+}
+
+/* TERRE */
+.planet-t {
+  padding: 0.5%;
+  background: linear-gradient(to right, #1eff00, #00b7ff);
+  animation: orbit-t 12s linear infinite;
+}
+
+/* MARS */
+.planet-m {
+  padding: 0.26%;
+  background: linear-gradient(to right, #ff3c00, #3f1d00);
+  animation: orbit-m 23s linear infinite;
+}
+
+/* VENUS */
+.planet-v {
+  padding: 0.48%;
+  background: linear-gradient(to right, #ff0000, #ff7300);
+  animation: orbit-v 7s linear infinite;
+}
+
+/* JUPITER */
+.planet-j {
+  padding: 5.5%;
+  background: linear-gradient(to right, #ffd67e, #642d00);
+  animation: orbit-j 140s linear infinite;
+}
+
+
+
+/* SATURN */
+.planet-s {
+  padding: 4.7%;
+  background: linear-gradient(to right, #fdff6c, #d36e1b);
+  animation: orbit-s 350s linear infinite;
+}
+
+.saturn-ring {
+  width: 120%;
+  height: 5%;
+  background-color: #6e673a;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* URANUS */
+.planet-u {
+  padding: 2%;
+  background: linear-gradient(to right, #6cb8ff, #371bd3);
+  animation: orbit-u 1000s linear infinite;
+}
+
+/* Responsive adjustments based on viewport width */
+
+/*VENUS*/
+@keyframes orbit-v {
+  from {
+    transform: rotate(0deg) translateX(10vw) rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg) translateX(10vw) rotate(0deg);
+  }
+}
+
+/*TERRE*/
+@keyframes orbit-t {
+  from {
+    transform: rotate(0deg) translateX(12vw) rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg) translateX(12vw) rotate(0deg);
+  }
+}
+
+/*MARS*/
+@keyframes orbit-m {
+  from {
+    transform: rotate(0deg) translateX(15vw) rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg) translateX(15vw) rotate(0deg);
+  }
+}
+
+/*JUPITER*/
+@keyframes orbit-j {
+  from {
+    transform: rotate(0deg) translateX(25vw) rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg) translateX(25vw) rotate(0deg);
+  }
+}
+
+/*SATURNE*/
+@keyframes orbit-s {
+  from {
+    transform: rotate(0deg) translateX(38vw) rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg) translateX(38vw) rotate(0deg);
+  }
+}
+
+/*URANUS*/
+@keyframes orbit-u {
+  from {
+    transform: rotate(0deg) translateX(47vw) rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg) translateX(47vw) rotate(0deg);
+  }
+}
+
+video {
+  border-radius: 15px;
+}
+
+/*CONTENU*/
+
+.fusee {
+  position: absolute;
+  width: 6%;
+}
+
+#fusee1 {
+  animation: fusee1 7s linear infinite;
+}
+
+
+@keyframes fusee1 {
+  from {
+    margin-right: 100%;
+    margin-top: 80%;
+  }
+
+  to {
+    margin-left: 100%;
+    margin-top: 50%;
+  }
+
+  to {
+    margin-left: 100%;
+    margin-top: 50%;
+    transform: rotate(215deg);
+  }
+
+  to {
+    margin-right: 100%;
+    margin-top: 50%;
+    transform: rotate(215deg);
+  }
+
+  to {
+    margin-right: 100%;
+    margin-top: 50%;
+    transform: rotate(90deg);
+  }
+
+  to {
+    margin-left: 100%;
+    margin-top: 80%;
+    transform: rotate(90deg);
+  }
+
+  to {
+    margin-left: 100%;
+    margin-top: 10%;
+    transform: rotate(90deg);
+  }
+
+  to {
+    margin-right: 0%;
+    margin-top: 80%;
+    transform: rotate(90deg);
+  }
+
+  to {
+    margin-right: 0%;
+    margin-top: 80%;
+    transform: rotate(0deg);
+  }
+}
+
+.position {
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.contenu {
+  overflow: visible;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) 0;
+  grid-template-rows: repeat(3, 1fr) 0;
+  grid-gap: 1rem;
+}
+
+.card:nth-child(1) {
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+.card:nth-child(2) {
+  grid-area: 1 / 3 / 2 / 5;
+}
+
+.card:nth-child(3) {
+  grid-area: 2 / 1 / 3 / 4;
+}
+
+.card:nth-child(4) {
+  grid-area: 2 / 4 / 3 / 5;
+}
+
+.card:nth-child(5) {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.card:nth-child(6) {
+  grid-area: 3 / 2 / 4 / 4;
+}
+
+.card:nth-child(7) {
+  grid-area: 3 / 4 / 4 / 5;
+}
+
+
+article.light {
+  box-shadow: 0px 0px 38px 0px rgba(0, 0, 0, 0.5);
+  border: black 1px solid;
+}
+
+article {
+  border: white 1px solid;
+  z-index: 1;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 38px 0px rgba(255, 255, 255, 0.5);
+  padding: 3%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+
+
+.planet.light {
+  box-shadow: 0px 0px 38px 0px rgba(0, 0, 0, 0.22);
+}
+
+.card div {
+  font-size: 20px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+}
+
+.card h1 {
+
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+
+.card p {
+  margin: 15px 0 12px 0;
+
+}
+
+.card a:hover {
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
+.card video {
+  width: 100%;
+}
+
+
+
+/* PETIT ECRAN */
+@media (max-width: 800px) {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 1em;
+  }
+
+  p,
+  a {
+    font-size: 0.8em;
+  }
+
+  .contenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  * {
+    overflow-x: hidden;
+  }
+
+  .head-mid {
+    display: none;
+
+  }
+
+  #burger {
+    display: flex;
+  }
+
+  header a {
+    font-size: 0.5rem;
+  }
+
+}
+
+/*LIGHT MODE*/
+.planet.light:hover p {
+  background-color: var(--black-50);
+  color: var(--black-800);
+}
