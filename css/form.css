@@ -245,7 +245,7 @@ textarea.light {
 
 }
 
-@media (max-height:340px) {
+@media (max-height:360px) {
   section {
     margin-top: 30vh;
     height: 90vh;
