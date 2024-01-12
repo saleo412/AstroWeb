@@ -61,6 +61,6 @@ function submitForm() {
   const name = document.getElementById('name').value; // La on récupere simplement le nom ("name")
   const email = document.getElementById('email').value; // La on récupere de la meme facon l'email ("email")
   const comment = document.getElementById('message').value; // La on récupere le message ou l'avis que la personne va nous laisser ("message")
-  window.location.href = `mailto:lssub24@gmail.com?subject=Avis&body=Je m'appelle: ${name}, vous pouvez me contacter sur cette adresse mail : ${email} !%0ACommentaire: ${comment}`;
+  window.location.href = `mailto:lssub24@gmail.com?subject=Avis&body=Je m'appelle: ${name}, vous pouvez me contacter sur cette adresse mail : ${email} !%0A${comment}`;
   // Cette commande permet de changer la location de la page ("l'url"), et la ca nous sert a pré-remplir le main avec le formulaire 
 }
