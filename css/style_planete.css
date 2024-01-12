@@ -315,3 +315,8 @@ main.light {
     font-size: 0.8em;
   }
 }
+@media (max-height:400px) {
+  .pos {
+    margin-top: 50vh;
+  }
+}
