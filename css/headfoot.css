@@ -151,7 +151,7 @@ header a {
 }
 
 .head-mid.show a {
-
+  background-color: transparent;
   font-size: 0.8rem;
 }
 
