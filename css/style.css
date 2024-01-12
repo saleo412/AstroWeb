@@ -436,3 +436,8 @@ article {
   background-color: var(--black-50);
   color: var(--black-800);
 }
+@media (max-height:400px) {
+  .pos {
+    margin-top: 50vh;
+  }
+}
