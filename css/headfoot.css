@@ -119,6 +119,10 @@ header a {
   color: var(--black-50);
   opacity: 0.5;
 }
+.head-mid.light a:hover {
+  color: var(--black-700);
+  opacity: 0.5;
+}
 .head-mid.show {
   display: flex;
   backdrop-filter: blur(10px);
