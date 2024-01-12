@@ -229,7 +229,7 @@ main {
 }
 
 
-.contenu {
+article {
   border: white 1px solid;
   z-index: 1;
   width: 80%;
@@ -241,22 +241,22 @@ main {
   margin-bottom: 15px;
 }
 
-.contenu.light {
+article.light {
   box-shadow: 0px 0px 38px 0px rgba(0, 0, 0, 0.5);
   border: black 1px solid;
 }
 
-.contenu h1 {
+article h1 {
   font-size: 40px;
   margin-bottom: 8px;
 }
 
-.contenu p {
+article p {
   margin: 15px 0 12px 0;
 
 }
 
-.contenu img {
+article img {
 
   width: 40%;
   border-radius: 15px;
